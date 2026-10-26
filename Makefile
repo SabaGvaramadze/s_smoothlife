@@ -1,5 +1,6 @@
 CC = gcc
 FLAGS = -g -Wall -Wextra
+LIBS = -lm -lc
 
 smoothlife : smoothlife.c
-	$(CC) smoothlife.c -o smoothlife $(FLAGS)
+	$(CC) $(FLAGS) smoothlife.c -o smoothlife $(LIBS)
